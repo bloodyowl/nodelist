@@ -1,8 +1,8 @@
 var docEl = document.documentElement
   , supportsProto = typeof {}.__proto__ == "object"
   , fragment = document.createDocumentFragment()
-  , nodeList = supportsProto ? [] : getExternalArray()
   , property = "_nodeList" + (+new Date())
+  , nodeList = supportsProto ? [] : getExternalArray()
   , _hasOwnProperty = {}.hasOwnProperty
   , interface
 
@@ -12,7 +12,7 @@ function getExternalArray(){
   frame.style.display = "none"
   docEl.insertBefore(frame, docEl.firstChild)
   contextDoc = frame.contentWindow.document
-  contextDoc.write("<script>parent." + property + " = Array<\/script>")
+  contextDoc.write("<script>parent[\"" + property + "\"] = Array<\/script>")
   contextDoc.close()
   proto = window[property].prototype
   window[property] = null
