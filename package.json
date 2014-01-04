@@ -1,0 +1,20 @@
+{
+  "name": "bloody-nodelist",
+  "repository" : "https://github.com/bloodyowl/nodelist",
+  "issues" : "https://github.com/bloodyowl/nodelist/issues",
+  "devDependencies": {
+    "tape": "~2.3.2"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": {
+      "ie": [ 8, 9, 10 ],
+      "firefox": [ 22, 23, 24, 25 ],
+      "chrome": [ 28, 29, 30, 31 ],
+      "safari": [ 5.1, 6 ],
+      "opera": [ 11, 12 ],
+      "iphone" : [ 6 ],
+      "ipad" : [ 6 ]
+    }
+  }
+}
