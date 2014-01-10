@@ -2,6 +2,7 @@
   "name": "bloody-nodelist",
   "repository" : "https://github.com/bloodyowl/nodelist",
   "issues" : "https://github.com/bloodyowl/nodelist/issues",
+  "version" : "0.1.0",
   "devDependencies": {
     "tape": "~2.3.2"
   },
